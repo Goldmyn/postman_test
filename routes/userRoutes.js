@@ -8,8 +8,8 @@ import getUserInfo from "../controllers/getUser.js";
 import getUserPost from "../controllers/getPost.js";
 
 router.post("/register", registerUser);
-router.put("/update-profile", updateUserProfile);
-router.patch("/update-email", updateUserEmail);
+router.put("/update-profile/:userId", updateUserProfile);
+router.patch("/update-email/:userId", updateUserEmail);
 router.delete("/delete-account", deleteUserAccount);
 router.get("/get-info", getUserInfo);
 router.get("/post/:postId", getUserPost);
